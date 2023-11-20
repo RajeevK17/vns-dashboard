@@ -7,4 +7,5 @@ urlpatterns = [
      path('security/', views.security, name='security'), #change password
      path('logintrails/', views.logintrails, name='logintrails'),
      path('activity/', views.activity, name='activity'),
+     path('rateplan/', views.rateplan, name='rateplan'),
 ]

@@ -14,3 +14,6 @@ def logintrails(request):
 
 def activity(request):
     return render(request, 'activity.html')
+
+def rateplan(request):
+    return render(request, 'RatePlan.html')
