@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -20,60 +21,60 @@
 	<link rel="stylesheet" href="https://api.vnsai.com/assets/js/plugins/pace/pace.min.css">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-	
-	<!--link rel="stylesheet" href="https://api.vnsai.com/assets/js/plugins/bootstrap-sweetalert/dist/sweetalert.css"> 
+	{% comment %}
+	<link rel="stylesheet" href="https://api.vnsai.com/assets/js/plugins/bootstrap-sweetalert/dist/sweetalert.css"> {%
+	endcomment %}
+
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-	<link rel="shortcut icon" href="https://vnsai.com/assets/img/favicon.png" />
-</head>
-
-<body class="hold-transition skin-black sidebar-mini">
-	<script>var sgc_site_name = "VIRTUOSO NETSOFT";</script>
-	<div class="wrapper">
+		<link rel="shortcut icon" href="https://vnsai.com/assets/img/favicon.png" />	</head>
+		<body class="hold-transition skin-black sidebar-mini">
+	<script>var sgc_site_name= "VIRTUOSO NETSOFT";</script>
+				<div class="wrapper">
 		<header class="main-header">
 			<a href="https://api.vnsai.com/user/dashboard/" class="logo" title="VIRTUOSO NETSOFT">
 				<span class="logo-mini">MENU</span>
-				<img style="margin-bottom:4px;max-height:46px;max-width:198px" src="https://api.vnsai.com/logo.png"
-					alt="VNS Ai" />
-			</a>
-			<nav class="navbar navbar-static-top">
-				<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+								<img style="margin-bottom:4px;max-height:46px;max-width:198px" src="https://api.vnsai.com/logo.png" alt="VNS Ai" />
+							</a>
+						<nav class="navbar navbar-static-top" style ="background-color: #111;">
+								<a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<div class="navbar-custom-menu">
+								<div class="navbar-custom-menu">
 					<ul class="nav navbar-nav">
-
-						<li class="dropdown tasks-menu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						
+												<li class="dropdown tasks-menu">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="fa fa-battery"></i>
 								<span class="label label-danger">0.0000</span>
 							</a>
 							<ul class="dropdown-menu">
-								<li class="header"><i class="fa fa-balance-scale"></i> {youhave} INR
-									<strong>0.0000</strong> {balanceamount}</li>
-							</ul>
-						</li>
+								<li class="header"><i class="fa fa-balance-scale"></i> {youhave} INR <strong>0.0000</strong> {balanceamount}</li>
+															</ul>
+													</li>
+													<li id="usertopbarnotifyid" class="dropdown notifications-menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														<i class="fa fa-bell-o"></i>
+														<span class="label label-primary">0</span>
+													</a></li>
 						<li id="usertopbarnotifyid" class="dropdown notifications-menu"></li>
-						<li class="dropdown user user-menu">
+												<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png"
-									class="user-image" alt="demo1">
+								<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png" class="user-image" alt="demo1">
 								<span class="hidden-xs">demo1</span>
 							</a>
 							<ul class="dropdown-menu">
-								<li class="user-header">
-									<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png"
-										class="img-circle" alt="demo1">
+																<li class="user-header">
+									<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png" class="img-circle" alt="demo1">
 									<p>
-										Demo VNS <small>demo1 - Member since Oct 2023</small>
+										Demo VNS										<small>demo1 - Member since Oct 2023</small>
 									</p>
 								</li>
-								<li class="user-body">
+																<li class="user-body">
 									<div class="col-md-6 text-center">
 										<a href="" target="">View Front Site</a>
 									</div>
@@ -81,14 +82,12 @@
 										<a href="{% url 'security'%}">Change Password</a>
 									</div>
 								</li>
-								<li class="user-footer" style="background-color: #B8BABA;">
+																<li class="user-footer" style="background-color: #B8BABA;">
 									<div class="pull-left">
-										<a href="https://api.vnsai.com/user/profile/"
-											class="btn btn-success btn-flat"><i class="fa fa-user"></i> Profile</a>
+										<a href="https://api.vnsai.com/user/profile/" class="btn btn-success btn-flat"><i class="fa fa-user"></i> Profile</a>
 									</div>
 									<div class="pull-right">
-										<a href="https://api.vnsai.com/logout/" class="btn btn-danger btn-flat"><i
-												class="fa fa-sign-out"></i> Sign out</a>
+										<a href="https://api.vnsai.com/logout/" class="btn btn-danger btn-flat"><i class="fa fa-sign-out"></i> Sign out</a>
 									</div>
 								</li>
 							</ul>
@@ -96,9 +95,8 @@
 					</ul>
 				</div>
 			</nav>
-		</header>
-		<aside class="main-sidebar">
-			<section class="sidebar">
+		</header>	<aside class="main-sidebar">
+		<section class="sidebar">
 				<div class="user-panel">
 					<div class="pull-left image">
 						<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png" class="img-circle"
@@ -118,7 +116,7 @@
 					<li class="treeview"><a href="#"><i class="fa fa-user"></i> <span>Profile</span><span
 								class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
 						<ul class="treeview-menu">
-							<li class=""><a href="{% url 'security'%}"><i class="fa fa-angle-double-right"></i>
+							<li class=""><a href=" {% url 'security'%}"><i class="fa fa-angle-double-right"></i>
 									<span>Security</span></a></li>
 							<li class=""><a href="https://api.vnsai.com/user/profile/"><i
 										class="fa fa-angle-double-right"></i> <span>Edit Profile</span></a></li>
@@ -287,145 +285,135 @@
 
 			<section class="content">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="box card box-black">
-							<div class="box-header card-header with-border bg-black">
-								<h3 class="box-title card-title">User Dashboard</h3>
+			<div class="col-md-12">
+				<div class="box card box-black">
+					<div class="box-header card-header with-border bg-black">
+						<h3 class="box-title card-title">User Dashboard</h3>
+					</div>
+					<div class="box-body card-body">
+						<div class="row">
+							<div class="col-md-12">
 							</div>
-							<div class="box-body card-body">
-								<div class="row">
-									<div class="col-md-12">
+						</div>
+						<div class="row" style="background-color:#ecf0f5">
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="info-box">
+									<span class="info-box-icon bg-aqua"><i class="fa fa-credit-card"></i></span>
+
+									<div class="info-box-content">
+										<span class="info-box-text">Credit Type</span>
+										<span class="info-box-number firstBoxCount">Wallet</span>
 									</div>
 								</div>
-								<div class="row" style="background-color:#ecf0f5">
-									<div class="col-md-3 col-sm-6 col-xs-12">
-										<div class="info-box">
-											<span class="info-box-icon bg-aqua"><i class="fa fa-credit-card"></i></span>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="info-box">
+									<span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
 
-											<div class="info-box-content">
-												<span class="info-box-text">Credit Type</span>
-												<span class="info-box-number firstBoxCount"></span>
-											</div>
-										</div>
+									<div class="info-box-content">
+										<span class="info-box-text">Balance</span>
+										<span style="display:inline"><span class="info-box-number creditBalance" style="display:inline !important"></span></span>
+										<span class="info-box-number creditBalance" style="display:inline !important">INR 0.0000</span>
 									</div>
-									<div class="col-md-3 col-sm-6 col-xs-12">
-										<div class="info-box">
-											<span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="info-box">
+									<span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Last Purchase</span>
+										<span style="display:inline"><span class="info-box-number lastPurchase" style="display:inline !important"></span></span>
+										<span class="info-box-number creditBalance" style="display:inline !important">INR 0.0000</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="info-box">
+									<span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
 
-											<div class="info-box-content">
-												<span class="info-box-text">Balance</span>
-												<span style="display:inline"><span class="info-box-number creditBalance"
-														style="display:inline !important"></span></span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-6 col-xs-12">
-										<div class="info-box">
-											<span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-											<div class="info-box-content">
-												<span class="info-box-text">Last Purchase</span>
-												<span style="display:inline"><span class="info-box-number lastPurchase"
-														style="display:inline !important"></span></span>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-6 col-xs-12">
-										<div class="info-box">
-											<span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Groups</span>
+										<span class="info-box-number totalGroups">0</span>
 
-											<div class="info-box-content">
-												<span class="info-box-text">Groups</span>
-												<span class="info-box-number totalGroups"></span>
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-12">
-						<div class="box" style="min-height: 570px !important;">
-							<div class="box-body">
-								<h5 class="box-title">SMS Statistics</h5>
-								<div id="morris-donut-chart" class="ecomm-donute" style="height: 317px;"></div>
-								<ul class="list-inline m-t-30 text-center">
-									<div class="row">
-										<div class="col-md-6">
-											<li class="p-r-20">
-												<h5 class="text-muted"><i class="fa fa-circle"
-														style="color: #01c0c8;"></i> Delivered</h5>
-												<h4 class="m-b-0 deliveredCls"></h4>
-											</li>
-										</div>
-										<div class="col-md-6">
-											<li class="p-r-20">
-												<h5 class="text-muted"><i class="fa fa-circle"
-														style="color: #DE1F95;"></i> Failed</h5>
-												<h4 class="m-b-0 failedCls"></h4>
-											</li>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-6">
-											<li class="p-r-20">
-												<h5 class="text-muted"><i class="fa fa-circle"
-														style="color: #0B62A4;"></i> Pending</h5>
-												<h4 class="m-b-0 pendingCls"></h4>
-											</li>
-										</div>
-										<div class="col-md-6">
-											<li class="p-r-20">
-												<h5 class="text-muted"><i class="fa fa-circle"
-														style="color: #4f5467;"></i> Rejected</h5>
-												<h4 class="m-b-0 rejectedCls"></h4>
-											</li>
-										</div>
-									</div>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-8 col-md-12">
-						<div class="box card" style="min-height: 570px !important;">
-							<div class="box-body card-body">
-								<div class="row">
-									<div class="pull-left col-md-6">
-										<h5 class="box-title card-title">Summary Graphical Stats</h5>
-									</div>
-									<div class="pull-right float-right margb20 col-md-6">
-										<div class="col-md-12">
-											<div class="btn-group float-right pull-right">
-												<form id="daychartfrm" name="daychartfrm" action="#daychartfrm"
-													method="post">
-													<div class="input-group input-sm">
-														<div class="input-group-addon input-group-prepend">
-															<span class="input-group-text"><i
-																	class="fa fa-calendar"></i></span>
-														</div>
-														<input type="text" id="datetimeinput" name="barCh"
-															data-auto-submit="" data-dateranges-report=""
-															class="sgcdatetime form-control"
-															value="Nov 15, 2023 - Nov 15, 2023">
-														<span class="input-group-btn">
-															<button type="submit"
-																class="btn btn-info input-sm btn-flat daterange">Go!</button>
-														</span>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
+			</div>
+		</div> 
+			<div class="row">
+			<div class="col-lg-4 col-md-12">
+				<div class="box" style="min-height: 570px !important;">
+					<div class="box-body">
+						<h5 class="box-title">SMS Statistics</h5>
+						<div id="morris-donut-chart" class="ecomm-donute" style="height: 317px;"></div>
+						<ul class="list-inline m-t-30 text-center">
+							<div class="row">
+								<div class="col-md-6">
+									<li class="p-r-20">
+										<h5 class="text-muted"><i class="fa fa-circle" style="color: #01c0c8;"></i> Delivered</h5>
+										<h4 class="m-b-0 deliveredCls"></h4>
+									</li>
 								</div>
-								<div class="row"></div>
-								<div id="morris-bar-chart"></div>
+								<div class="col-md-6">
+									<li class="p-r-20">
+										<h5 class="text-muted"><i class="fa fa-circle" style="color: #DE1F95;"></i> Failed</h5>
+										<h4 class="m-b-0 failedCls"></h4>
+									</li>
+								</div>
 							</div>
-						</div>
+							<div class="row">
+								<div class="col-md-6">
+									<li class="p-r-20">
+										<h5 class="text-muted"><i class="fa fa-circle" style="color: #0B62A4;"></i> Pending</h5>
+										<h4 class="m-b-0 pendingCls"></h4>
+									</li>
+								</div>
+								<div class="col-md-6">
+									<li class="p-r-20">
+										<h5 class="text-muted"><i class="fa fa-circle" style="color: #4f5467;"></i> Rejected</h5>
+										<h4 class="m-b-0 rejectedCls"></h4>
+									</li>
+								</div>
+							</div>
+						</ul>
 					</div>
 				</div>
-
+			</div> 
+			<div class="col-lg-8 col-md-12">
+				<div class="box card" style="min-height: 570px !important;">
+					<div class="box-body card-body">
+						<div class="row">
+							<div class="pull-left col-md-6">
+								<h5 class="box-title card-title">Summary Graphical Stats</h5>
+							</div>
+							<div class="pull-right float-right margb20 col-md-6">
+								<div class="col-md-12">
+									<div class="btn-group float-right pull-right">
+										<form id="daychartfrm" name="daychartfrm" action="#daychartfrm" method="post">
+											<div class="input-group input-sm">
+												<div class="input-group-addon input-group-prepend">
+													<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+												</div>
+												<input type="text" id="datetimeinput" name="barCh" data-auto-submit="" data-dateranges-report="" class="sgcdatetime form-control" value="Nov 15, 2023 - Nov 15, 2023">
+												<span class="input-group-btn">
+													<button type="submit" class="btn btn-info input-sm btn-flat daterange">Go!</button>
+												</span> 
+										 </div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						 <div class="row"></div>
+						<div id="morris-bar-chart"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+				
 				<div class="row">
 					<div class="col-md-12">
 						<div class="box box-primary">
@@ -562,17 +550,12 @@
 	<script type="text/javascript" src="https://api.vnsai.com/assets/fastclick/lib/fastclick.js"></script>
 	<script type="text/javascript" src="https://api.vnsai.com/assets/js/adminlte/adminlte.js"></script>
 	<script type="text/javascript" src="https://api.vnsai.com/assets/js/sgcCommonJs.js?v=1.11"></script>
-	{% comment %} <script type="text/javascript" src="https://api.vnsai.com/assets/js/plugins/bootstrap-sweetalert/dist/sweetalert.min.js"><script> {% endcomment %}
+	{% comment %}
+	<script type="text/javascript"
+		src="https://api.vnsai.com/assets/js/plugins/bootstrap-sweetalert/dist/sweetalert.min.js"></script> {%
+	endcomment %}
 	<script language="javascript"
 		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-	<script>var isUpdateRolePermission = "false"; var isDeleteRolePermission = "false";</script>
-	<script src="https://api.vnsai.com/assets/js/plugins/footable/js/footable.min.js"></script>
-	<script src="https://api.vnsai.com/assets/js/plugins/knob/jquery.knob.js"></script>
-	<script src="https://api.vnsai.com/assets/js/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
-	<script
-		src="https://api.vnsai.com/assets/js/plugins/Number-Count-Up-Down-Animation-jQuery/dist/jquery.easy_number_animate.min.js"></script>
-	<script src="https://api.vnsai.com/assets/js/user/dashboard.js?v=0.001"></script>
-</body>
-
+<script>var isUpdateRolePermission = "false";var isDeleteRolePermission = "false";</script><script src="https://api.vnsai.com/assets/js/plugins/footable/js/footable.min.js"></script><script src="https://api.vnsai.com/assets/js/plugins/knob/jquery.knob.js"></script><script src="https://api.vnsai.com/assets/js/plugins/bootstrap-daterangepicker/daterangepicker.js"></script><script src="https://api.vnsai.com/assets/js/plugins/Number-Count-Up-Down-Animation-jQuery/dist/jquery.easy_number_animate.min.js"></script><script src="https://api.vnsai.com/assets/js/user/dashboard.js?v=0.001"></script></body>
 </html>
