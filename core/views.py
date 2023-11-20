@@ -8,3 +8,6 @@ def dashboard(request):
 
 def security(request):
     return render(request, 'security.html')
+
+def logintrails(request):
+    return render(request, 'login_trails.html')
