@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %} 
+
+<section class="content"> 
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box card box-black">
+                <div class="box-header card-header with-border bg-black">
+                    <h3 class="box-title card-title">Secure your account</h3>
+                </div>
+                <div class="box-body card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                        </div>
+                    </div>
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs" id="smsTab">
+                            <li class=""><a id="chPassTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'security'%}"><i class="fa fa-lock"></i> Change Password</a></li>
+                            <li class=""><a id="loginTrailTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'logintrails' %}"><i class="fa fa-road"></i> Login Trails</a></li>
+                            <li class=" active"><a id="activityTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0 active" href="{% url 'activity' %}"><i class="fa fa-recycle"></i> Activity</a></li>
+                            <li class=""><a id="ipWhitelistTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="https://api.vnsai.com/user/security/?action=ipWhitelist"><i class="fa fa-user-secret"></i> IP Whitelist</a></li>
+                        </ul>
+                        <div class="tab-content padding-in">
+                                                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table id="sgcdataTableId" class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr class="bg-black">
+                                                    <th class="text-white">Comments</th>
+                                                    <th class="text-white last">Timestamp</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                            <td class="id align-middle">Login Successful by demo1</td>
+                            <td class="last">20-11-2023 20:38:36</td>
+                        </tr><tr>
+                            <td class="id align-middle">Login Successful by demo1</td>
+                            <td class="last">20-11-2023 20:35:11</td>
+                        </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="box-footer clearfix">
+                                        <div class="pull-left">
+                                            <span class="btn btn-sm bg-aqua">Showing 1 to 50 of 135 entries</span>
+                                        </div>
+                                        <ul class="pagination pagination-sm no-margin pull-right">
+                                            <li class="previous disabled"><a onclick="return false;" href="#">&laquo;&laquo;  First</a></li>&nbsp;<li class="previous disabled"><a onclick="return false;" href="#">&laquo; Previous</a></li>&nbsp;<li class="active"><a class="btn btn-default" href="#" title="Page 1">1</a>&nbsp;&nbsp;</li><li><a class="btn btn-primary" href="https://api.vnsai.com/user/security/?action=activity&page=2&perpage=50" title="Page 2">2</a>&nbsp;&nbsp;</li><li><a class="btn btn-primary" href="https://api.vnsai.com/user/security/?action=activity&page=3&perpage=50" title="Page 3">3</a>&nbsp;&nbsp;</li><li class="next"><a class="btn btn-primary" href="https://api.vnsai.com/user/security/?action=activity&page=2&perpage=50">Next &raquo;</a></li><li class="next"><a class="btn btn-primary" href="https://api.vnsai.com/user/security/?action=activity&page=3&perpage=50">Last &raquo;&raquo;</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

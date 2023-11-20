@@ -15,9 +15,9 @@
                     </div>
                     <div class="tabbable">
                         <ul class="nav nav-tabs" id="smsTab">
-                            <li class=""><a id="chPassTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="https://api.vnsai.com/user/security/?action=changePassword"><i class="fa fa-lock"></i> Change Password</a></li>
-                                                            <li class=" active"><a id="loginTrailTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0 active" href="https://api.vnsai.com/user/security/?action=loginTrails"><i class="fa fa-road"></i> Login Trails</a></li>
-                            <li class=""><a id="activityTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="https://api.vnsai.com/user/security/?action=activity"><i class="fa fa-recycle"></i> Activity</a></li>
+                            <li class=""><a id="chPassTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'security'%}"><i class="fa fa-lock"></i> Change Password</a></li>
+                            <li class=" active"><a id="loginTrailTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0 active" href="{% url 'logintrails'%}"><i class="fa fa-road"></i> Login Trails</a></li>
+                            <li class=""><a id="activityTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'activity' %}"><i class="fa fa-recycle"></i> Activity</a></li>
                             <li class=""><a id="ipWhitelistTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="https://api.vnsai.com/user/security/?action=ipWhitelist"><i class="fa fa-user-secret"></i> IP Whitelist</a></li>
                         </ul>
                         <div class="tab-content padding-in">
@@ -38,13 +38,13 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                            <td class="id align-middle">182.77.50.248</td>
-                            <td class="id align-middle">Google Chrome</td>
-                            <td class="id align-middle">Windows 10</td>
-                            <td class="id align-middle">Panipat</td>
-                            <td class="id align-middle">Haryana</td>
-                            <td class="id align-middle">India</td>
-                            <td class="last">20-11-2023 14:38:53</td>
+                            <td class="id align-middle"></td>
+                            <td class="id align-middle"></td>
+                            <td class="id align-middle"></td>
+                            <td class="id align-middle"></td>
+                            <td class="id align-middle"></td>
+                            <td class="id align-middle"></td>
+                            <td class="last"></td>
                         </tr>
                                             </tbody>
                                         </table>

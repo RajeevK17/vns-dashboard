@@ -10,4 +10,7 @@ def security(request):
     return render(request, 'security.html')
 
 def logintrails(request):
-    return render(request, 'login_trails.html')
+    return render(request, 'logintrails.html')
+
+def activity(request):
+    return render(request, 'activity.html')
