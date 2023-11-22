@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
 
@@ -8,9 +7,8 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="copyright" content="Copyright 2023, https://api.vnsai.com" />
     <title>Edit Profile - VNS Ai</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
-
+    <link rel="stylesheet" href="https://api.vnsai.com/assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://api.vnsai.com/assets/font-awesome/css/font-awesome.css">
     <script
         type="text/javascript">var sgc_user_country_id = "101"; var sgc_user_state_id = "6"; var sgc_user_city_id = "594";</script>
     <style>
@@ -215,8 +213,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="header"><i class="fa fa-balance-scale"></i> {youhave} INR
-                                    <strong>0.0000</strong> {balanceamount}
-                                </li>
+                                    <strong>0.0000</strong> {balanceamount}</li>
                             </ul>
                         </li>
 
@@ -1422,236 +1419,5 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <footer class="main-footer">
-            <div class="row">
-                <div class="col-md-6">
-                    <strong>Copyrights &copy; <a href="https://api.vnsai.com" target="_blank">VIRTUOSO NETSOFT</a> 2023
-                    </strong> All rights reserved.
-                    | <a href="https://api.vnsai.com/terms/">Terms and Conditions</a> | <a
-                        href="https://api.vnsai.com/privacy/">Privacy Policy</a>
-                </div>
-                <div class="col-md-4">
-                    <span class="version"><strong>Version</strong> 5.4</span>
-                </div>
-                <div class="col-md-2">
-                    <div class="pull-right hidden-xs">
-                        <div class="langsel">
-                            <div class="input-group input-sm">
-                                <div id="sgc_translate_element"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                    <p>
-                        Address: Plot 10, Netsmartz House, Chandigarh IT Park, Chandigarh - 160101
-                    <p>
-                    <p>
-                        Phone:+91 81460 10600
-                    </p>
-                    <p>
-                        Email:Vnsai@virtuosonetsoft.Com
-                    </p>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <aside class="control-sidebar control-sidebar-light">
-            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-                <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-link"></i>
-                        Quick Links</a></li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="control-sidebar-home-tab">
-                    <ul class="control-sidebar-menu">
-                        <li class="sgclihead"><a class="sgcheadlia text-white" href="javascript:void(0);">Send SMS</a>
-                        </li>
-                        <li><a href="https://api.vnsai.com/admin/send_sms.php"><i
-                                    class="fa fa-angle-double-right text-blue"></i> Send SMS</a></li>
-                        <li class="sgclihead"><a class="sgcheadlia text-white" href="javascript:void(0);">Send Voice</a>
-                        </li>
-                        <li><a href="https://api.vnsai.com/admin/send_voice.php"><i
-                                    class="fa fa-angle-double-right text-blue"></i> Send Voice</a></li>
-                        <li class="sgclihead"><a class="sgcheadlia text-white" href="javascript:void(0);">Report</a>
-                        </li>
-                        <li><a href="https://api.vnsai.com/admin/delivery_report.php"><i
-                                    class="fa fa-angle-double-right text-blue"></i> SMS Delivery Report </a></li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
-        <div class="control-sidebar-bg"></div>
-    </div><a href="#" class="scroll-top bg-black" id="scroll-top">
-        <i class="arrow-top fa fa-arrow-up"></i>
-        <i class="arrow-bottom fa fa-arrow-up"></i>
-    </a>
-    <script src="https://api.vnsai.com/assets/jquery/dist/jquery-3.6.3.min.js"></script>
-    <script src="https://api.vnsai.com/assets/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        var sgc_base_url = "https://api.vnsai.com";
-        var sgc_admin_url = "https://api.vnsai.com/admin";
-        var sgc_user_url = "https://api.vnsai.com/user";
-        var sgc_user_theme_dir = "default";
-        var sgc_paginated_items = "100";
-        var pageSgcLoader = "0";
-        var sgc_set_site_language = 'google';
-        var sgc_fetch_data = "ajaxRead";
-        var sgc_ajax_delete = "ajaxDelete";
-        var themeType = "user";
-        var defaultCountryId = "101";
-        var otpr = "120";
-        var dataTableLoader = "<button class=\"btn btn-primary\" type=\"button\" disabled=\"\"><i class=\"fa fa-refresh fa-spin\"></i> Loading...</button>";
-        var sgc_lang_4 = "Total Requests";
-        var sgc_lang_48 = "Save Changes";
-        var sgc_lang_83 = "Reload";
-        var sgc_lang_88 = "Show";
-        var sgc_lang_125 = "Search";
-        var sgc_lang_200 = "Are you sure?";
-        var sgc_lang_201 = "You cannot undo and retrieve the deleted records.";
-        var sgc_lang_204 = "Success";
-        var sgc_lang_216 = "Please wait, Saving...";
-        var sgc_lang_217 = "Select Country";
-        var sgc_lang_218 = "Select State";
-        var sgc_lang_219 = "Select City";
-        var sgc_lang_332 = "Error";
-        var sgc_lang_366 = "The password must contain at least one special character.";
-        var sgc_lang_367 = "The password must not contain 3 consecutive identical characters.";
-        var sgc_lang_368 = "The password must contain at least one lowercase letter.";
-        var sgc_lang_369 = "The password must contain at least one uppercase letter.";
-        var sgc_lang_370 = "The password must contain at least one number.";
-        var sgc_lang_612 = "Hide";
-        var sgc_lang_613 = "Successfully Copied";
-        var sgc_lang_614 = "This will delete your record, are you sure?";
-        var sgc_lang_615 = "You will not be able to recover this record!";
-        var sgc_lang_616 = "No rows selected";
-        var sgc_lang_617 = "Delete Selected";
-        var sgc_lang_618 = "Save Current Page in CSV";
-        var sgc_lang_619 = "Exceptions found!";
-        var sgc_lang_620 = "Clear";
-        var sgc_lang_621 = "Please wait..";
-        var sgc_lang_622 = "Error Code:";
-        var sgc_lang_623 = "Error Message:";
-        var sgc_lang_709 = "Group and its associated contacts will be permanently deleted. You cannot undo and retrieve the deleted records.";
-        var sgc_lang_721 = "Total Mobile nos.";
-        var sgc_lang_866 = "Quick Update";</script>
-    <script src="https://api.vnsai.com/assets/js/plugins/pace/pace.min.js"></script>
-    <script type="text/javascript"
-        src="https://api.vnsai.com/assets/js/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="https://api.vnsai.com/assets/js/plugins/intl-tel-input/js/intlTelInput.min.js"></script>
-    <script type="text/javascript" src="https://api.vnsai.com/assets/fastclick/lib/fastclick.js"></script>
-    <script type="text/javascript" src="https://api.vnsai.com/assets/js/adminlte/adminlte.js"></script>
-    <script type="text/javascript" src="https://api.vnsai.com/assets/js/sgcCommonJs.js?v=1.131700457922"></script>
-    <script type="text/javascript" src="https://api.vnsai.com/assets/js/sgcForm.js"></script>
-    <script type="text/javascript" src="https://api.vnsai.com/assets/js/user/sgcProfileJs.js"></script>
-    <script type="text/javascript"
-        src="https://api.vnsai.com/assets/js/plugins/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
-    <script language="javascript"
-        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-    <script>var isUpdateRolePermission = "false"; var isDeleteRolePermission = "false";</script>
-    <script>var input = document.querySelector("#userMobile"); var iti = window.intlTelInput(input, { utilsScript: "https://api.vnsai.com/assets/js/plugins/intl-tel-input/js/utils.js", preferredCountries: ["in", "us"], defaultCountry: "in", nationalMode: false, preventInvalidDialCodes: true, hiddenInput: "sgc_mobile_cc", autoHideDialCode: false, formatOnDisplay: false, separateDialCode: true }); $(document).ready(function () { var e = iti.getSelectedCountryData().dialCode, t = input.value, t = (e.length, t.substr(1)); $("#userMobile").val(t) });</script>
-    <script>
-        function initializeIntlTelInput() {
-            var input = document.querySelector("#sandboxMobileNo");
-            var iti = window.intlTelInput(input, {
-                utilsScript: sgc_base_url + "/assets/js/plugins/intl-tel-input/js/utils.js",
-                preferredCountries: ['in', "us"],
-                defaultCountry: defaultCountryId,
-                nationalMode: false,
-                preventInvalidDialCodes: true,
-                hiddenInput: "sgc_mobile_cc",
-                autoHideDialCode: false,
-                formatOnDisplay: false,
-                separateDialCode: true
-            });
-            var e = iti.getSelectedCountryData().dialCode, t = input.value, t = (e.length, t.substr(1));
-            $("#sandboxMobileNo").val(t);
-            $("#formattedSandboxPhone").val(iti.getNumber());
-            $("#sandboxMobileNo").on("keyup", function () {
-                $("#formattedSandboxPhone").val(iti.getNumber());
-            });
-            $('#sandboxMobileNo').on('input', function () {
-                var sanitized = $(this).val().replace(/[^0-9]/g, '');
-                $(this).val(sanitized);
-            });
-        }
-
-        if (typeof intlTelInput === 'undefined') {
-            var script = document.createElement('script');
-            script.src = sgc_base_url + '/assets/js/plugins/intl-tel-input/js/intlTelInput.min.js';
-            script.onload = function () {
-                $("#whitelistSandboxOtp").on('shown.bs.modal', function () {
-                    $("#formattedPhone").val('');
-                    if (typeof iti !== 'undefined') {
-                        iti.destroy();
-                    }
-                    initializeIntlTelInput();
-                });
-            };
-            document.body.appendChild(script);
-        } else {
-            $("#whitelistSandboxOtp").on('shown.bs.modal', function () {
-                $("#formattedPhone").val('');
-                if (typeof iti !== 'undefined') {
-                    iti.destroy();
-                }
-                initializeIntlTelInput();
-            });
-        }
-
-        if (typeof $.notify !== 'function') {
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = sgc_base_url + '/assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js';
-            script.onload = function () {
-                // Now $.notify is loaded and you can use it
-            };
-            document.body.appendChild(script);
-        }
-
-        //if (typeof intlTelInput === 'undefined') {
-        //    var script = document.createElement('script');
-        //    script.src = sgc_base_url + '/assets/js/plugins/intl-tel-input/js/intlTelInput.min.js';
-        //    script.onload = function() {
-        //	    $('#whitelistSandboxOtp').on('shown.bs.modal', function () {
-        //	    var input = document.querySelector("#sandboxMobileNo");
-        //		if (input) {
-        //			var iti = window.intlTelInput(input, {
-        //				utilsScript: sgc_base_url + "/assets/js/plugins/intl-tel-input/js/utils.js",
-        //				preferredCountries: ["in", "us"],
-        //				defaultCountry: "in",
-        //				nationalMode: false,
-        //				preventInvalidDialCodes: true,
-        //				hiddenInput: "sgc_sandbox_mobile_cc",
-        //				autoHideDialCode: false,
-        //				formatOnDisplay: false,
-        //				separateDialCode: true
-        //			});
-        //			$(".iti__country-list").css("z-index", "9999");
-        //			var e = iti.getSelectedCountryData().dialCode, t = input.value, t = (e.length, t.substr(1));
-        //			$("#sandboxMobileNo").val(t);
-        //			$("#sandboxMobileNo").on("keyup", function () {
-        //				$("#formattedSandboxPhone").val(iti.getNumber());
-        //			});
-        //			$(input).on('countrychange', function (e) {
-        //				var currentText = iti.getNumber(intlTelInputUtils.numberFormat.E164);
-        //				if (currentText.charAt(0) === '+') {
-        //					var dialCode = iti.getSelectedCountryData().dialCode;
-        //					var newNumber = currentText.substring(dialCode.length + 1);
-        //					$(input).val(newNumber);
-        //				}
-        //			});
-        //		}
-        //	});
-        //    };
-        //    document.body.appendChild(script);
-        //}
-    </script>
-
-</body>
-
-</html>
+            {% endblock content %}
