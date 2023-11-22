@@ -20,3 +20,6 @@ def edit_profile(request):
 
 def rate_plan(request):
     return render(request, 'rate_plan.html')
+
+def ip_whitelist(request):
+    return render(request, 'ip_whitelist.html')

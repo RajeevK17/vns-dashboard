@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="content-header">
+    <h1>
+        Security <small><a class="btn btn-xs btn-info" style="margin-left:20px;" href="" target="_blank" title="Help Documentation">Help Doc</a></small>
+    </h1>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'security' %}"><i class="fa fa-lock"></i> Security</a></li>
+    </ol>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box card box-black">
+                <div class="box-header card-header with-border bg-black">
+                    <h3 class="box-title card-title">Secure your account</h3>
+                </div>
+                <div class="box-body card-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                        </div>
+                    </div>
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs" id="smsTab">
+                            <li class=""><a id="chPassTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'security' %}"><i class="fa fa-lock"></i> Change Password</a></li>
+                            <li class=""><a id="loginTrailTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'login_trails' %}"><i class="fa fa-road"></i> Login Trails</a></li>
+                            <li class=""><a id="activityTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'activity' %}"><i class="fa fa-recycle"></i> Activity</a></li>
+                            <li class=" active"><a id="ipWhitelistTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0 active" href="{% url 'ip_whitelist' %}"><i class="fa fa-user-secret"></i> IP Whitelist</a></li>
+                        </ul>
+                        <div class="tab-content padding-in">
+                                                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="box card box-black">
+                                        <div class="box-header card-header with-border bg-black">
+                                            <h3 class="box-title card-title">API Whitelisted IP List</h3>
+                                        </div>
+                                        <div class="box-body card-body">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="table-responsive">
+                                                        <table id="sgcdataTableId" class="table table-hover table-bordered">
+                                                            <thead>
+                                                                <tr class="bg-black">
+                                                                    <th class="text-white">Whitelisted IP</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                <td class="id align-middle">Any IP</td>
+            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="box card box-black">
+                                                        <div class="box-header card-header with-border bg-black">
+                                                            <h3 class="box-title card-title">Add New IP - Whitelist API Calls</h3>
+                                                        </div>
+                                                        <div class="box-body card-body">
+                                                                                                                            <p>To whitelist specific IP for API, please contact our team.</p>
+                                                                                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="box card box-black">
+                                                        <div class="box-header card-header with-border bg-black">
+                                                            <h3 class="box-title card-title">Find Domain's IP</h3>
+                                                        </div>
+                                                        <div class="box-body card-body">
+                                                                                                                            <form action="user/security/?action=ipWhitelist" method="post" id="sgcFormId2" name="sgcFormId2">
+                                                                <div class="form-group">
+                                                                    <label for="domain" class="sgc_required">Domain</label>
+                                                                    <input tabindex="1" type="text" class="form-control" id="domain" name="domain" value="" placeholder="example.com" data-rule-required="true" data-msg-required="Enter domain with out www." required>
+                                                                </div>
+                                                                <div class="box-footer">
+                                                                    <button tabindex="2" type="submit" id="sgc-btn-progress-2" class="btn btn-primary"><i class="fa fa-search"></i> Find My Domain IP</button>
+                                                                    <span id="sgc-progress-indicator-2" class="sgcprogressindicator btn btn-primary btn-flat hide"><i class="fa fa-cog fa-spin"></i> Please wait, checking...</span>
+                                                                    <input type="hidden" id="submitformdomainfind" name="submitformdomainfind" value="1">
+                                                                    <input type="hidden" name="csrfToken" id="csrfToken" value="ac968c309da12a7383577a919c07fa5fa8a56072512994df9f4a5a064b3a5844">
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <hr class="margt50 margb50">
+                                <div class="box card box-black">
+                                    <div class="box-header card-header with-border bg-black">
+                                        <h3 class="box-title card-title">UI Whitelisted IP List</h3>
+                                    </div>
+                                    <div class="box-body card-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table-responsive">
+                                                    <table id="sgcdataTableId" class="table table-hover table-bordered">
+                                                        <thead>
+                                                            <tr class="bg-black">
+                                                                <th class="text-white">Whitelisted IP</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                <td class="id align-middle">Any IP</td>
+            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="box card box-black">
+                                                    <div class="box-header card-header with-border bg-black">
+                                                        <h3 class="box-title card-title">Add New IP - Whitelist UI</h3>
+                                                    </div>
+                                                    <div class="box-body card-body">
+                                                                                                            <p>To whitelist specific IP for User Interface, please contact our team.</p>
+                                                                                                </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="box card box-black">
+                                                    <div class="box-header card-header with-border bg-black">
+                                                        <h3 class="box-title card-title">Your Current Remote IP</h3>
+                                                    </div>
+                                                    <div class="box-body card-body">
+                                                        <p>182.77.50.248 <span data-clipboard-text="182.77.50.248" data-toggle="tooltip" title="Copy Remote IP"><i class="fa fa-clone text-blue modal-pointer"></i></span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
