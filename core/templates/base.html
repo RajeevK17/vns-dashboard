@@ -116,7 +116,7 @@
 						<ul class="treeview-menu">
 							<li class=""><a href=" {% url 'security'%}"><i class="fa fa-angle-double-right"></i>
 									<span>Security</span></a></li>
-							<li class=""><a href=""><i
+							<li class=""><a href="{% url 'edit_profile' %}"><i
 										class="fa fa-angle-double-right"></i> <span>Edit Profile</span></a></li>
 							<li class=""><a href="{% url 'rateplan' %}"><i
 										class="fa fa-angle-double-right"></i> <span>Rate Plan</span></a></li>
@@ -432,8 +432,8 @@
 			<div class="row">
 				<div class="col-md-6">
 					<strong>Copyrights &copy; VIRTUOSO NETSOFT 2023 </strong> All rights reserved.
-					| <a href="https://api.vnsai.com/terms/">Terms and Conditions</a> | <a
-						href="https://api.vnsai.com/privacy/">Privacy Policy</a>
+					| <a href="=/terms/">Terms and Conditions</a> | <a
+						href="/privacy/">Privacy Policy</a>
 				</div>
 				<div class="col-md-4">
 					<span class="version"><strong>Version</strong> 4.9</span>
@@ -496,7 +496,7 @@
 	<script src="https://api.vnsai.com/assets/jquery/dist/jquery-3.6.3.min.js"></script>
 	<script src="https://api.vnsai.com/assets/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript">
-		var sgc_base_url = "https://api.vnsai.com";
+		var sgc_base_url = "";
 		var sgc_admin_url = "https://api.vnsai.com/admin";
 		var sgc_user_url = "https://api.vnsai.com/user";
 		var sgc_user_theme_dir = "default";

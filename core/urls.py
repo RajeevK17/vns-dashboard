@@ -8,4 +8,5 @@ urlpatterns = [
      path('logintrails/', views.logintrails, name='logintrails'),
      path('activity/', views.activity, name='activity'),
      path('rateplan/', views.rateplan, name='rateplan'),
+     path('edit_profile/', views.editprofile, name='edit_profile'),
 ]
