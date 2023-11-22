@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
 
-def BASE(request):
+def base(request):
     return render(request, 'base.html')
 
 def dashboard(request):
@@ -15,8 +15,8 @@ def login_trails(request):
 def activity(request):
     return render(request, 'activity.html')
 
-def editprofile(request):
+def edit_profile(request):
     return render(request, 'edit_profile.html')
 
-def rateplan(request):
-    return render(request, 'RatePlan.html')
+def rate_plan(request):
+    return render(request, 'rate_plan.html')

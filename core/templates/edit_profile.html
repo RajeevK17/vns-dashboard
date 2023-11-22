@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="copyright" content="Copyright 2023, https://api.vnsai.com" />
-    <title>Edit Profile - VNS Ai</title>
-    <link rel="stylesheet" href="https://api.vnsai.com/assets/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="https://api.vnsai.com/assets/font-awesome/css/font-awesome.css">
-    <script
-        type="text/javascript">var sgc_user_country_id = "101"; var sgc_user_state_id = "6"; var sgc_user_city_id = "594";</script>
+{% extends 'base.html'%}
+{% block content %}
     <style>
         .social-top {
             height: 250px;
@@ -213,8 +202,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="header"><i class="fa fa-balance-scale"></i> {youhave} INR
-                                    <strong>0.0000</strong> {balanceamount}
-                                </li>
+                                    <strong>0.0000</strong> {balanceamount}</li>
                             </ul>
                         </li>
 

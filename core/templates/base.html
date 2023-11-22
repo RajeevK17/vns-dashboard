@@ -125,11 +125,11 @@
 					<li class="treeview"><a href="#"><i class="fa fa-user"></i> <span>Profile</span><span
 								class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
 						<ul class="treeview-menu">
-							<li class=""><a href=" {% url 'security'%}"><i class="fa fa-angle-double-right"></i>
+							<li class=""><a href=" {% url 'security' %}"><i class="fa fa-angle-double-right"></i>
 									<span>Security</span></a></li>
-							<li class=""><a href=""><i
+							<li class=""><a href="{% url 'edit_profile' %}"><i
 										class="fa fa-angle-double-right"></i> <span>Edit Profile</span></a></li>
-							<li class=""><a href="{% url 'rateplan' %}"><i
+							<li class=""><a href="{% url 'rate_plan' %}"><i
 										class="fa fa-angle-double-right"></i> <span>Rate Plan</span></a></li>
 							<li class=""><a href="https://api.vnsai.com/user/notifications/"><i
 										class="fa fa-angle-double-right"></i> <span>Notification Settings</span></a>
