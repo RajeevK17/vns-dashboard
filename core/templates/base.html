@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 <html>
-	
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +10,15 @@
 	<meta name="copyright" content="Copyright 2023" />
 	<title>Dashboard - VNS Ai</title>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<link rel="stylesheet" href="https://api.vnsai.com/assets/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="https://api.vnsai.com/assets/font-awesome/css/font-awesome.css">
-	<link href="https://api.vnsai.com/assets/js/plugins/footable/css/footable.bootstrap.min.css" rel="stylesheet">
-	<link href="https://api.vnsai.com/assets/js/plugins/css-chart/css-chart.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://api.vnsai.com/assets/js/plugins/bootstrap-daterangepicker/daterangepicker.css">
-	<link rel="stylesheet" href="https://api.vnsai.com/assets/css/adminlte/AdminLTE.css">
-	<link rel="stylesheet" href="https://api.vnsai.com/assets/css/sgcCommonCss.css?v=0.0009">
-	<link rel="stylesheet" type="text/css"
-		href="https://api.vnsai.com/assets/css/adminlte/skins/skin-black.min.css?v=0.01" />
-	<link rel="stylesheet" href="https://api.vnsai.com/assets/js/plugins/pace/pace.min.css">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+	<link rel="stylesheet" href="{% static 'css/font-awesome.css'%}">
+	<link rel="stylesheet" href="{% static 'css/footable.bootstrap.min.css'%}">
+	<link rel="stylesheet" href="{% static 'css/css-chart.css'%}">
+	<link rel="stylesheet" href="{% static 'css/daterangepicker.css'%}">
+	<link rel="stylesheet" href="{% static 'css/AdminLTE.css'%}">
+	<link rel="stylesheet" href="{% static 'css/sgcCommonCss.css'%}">
+	<link rel="stylesheet" href="{% static 'css/skin-black.min.css'%}">
+	<link rel="stylesheet" href="{% static 'css/pace.min.css'%}">
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
@@ -70,12 +68,14 @@
 						<li id="usertopbarnotifyid" class="dropdown notifications-menu"></li>
 						<li class="dropdown user user-menu">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png" class="user-image" alt="demo1">
+								<img src="{%static 'img/avatar.png' %}"
+									class="user-image" alt="demo1">
 								<span class="hidden-xs">demo1</span>
 							</a>
 							<ul class="dropdown-menu">
-																<li class="user-header">
-									<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png" class="img-circle" alt="demo1">
+								<li class="user-header">
+									<img src="{%static 'img/avatar.png' %}"
+										class="img-circle" alt="demo1">
 									<p>
 										Demo VNS <small>demo1 - Member since Oct 2023</small>
 									</p>
@@ -108,7 +108,7 @@
 			<section class="sidebar">
 				<div class="user-panel">
 					<div class="pull-left image">
-						<img src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png" class="img-circle"
+						<img src="{%static 'img/avatar.png' %}" class="img-circle"
 							alt="demo1">
 					</div>
 					<div class="pull-left info">
@@ -131,7 +131,7 @@
 										class="fa fa-angle-double-right"></i> <span>Edit Profile</span></a></li>
 							<li class=""><a href="{% url 'rate_plan' %}"><i
 										class="fa fa-angle-double-right"></i> <span>Rate Plan</span></a></li>
-							<li class=""><a href="/user/notifications/"><i
+							<li class=""><a href="https://api.vnsai.com/user/notifications/"><i
 										class="fa fa-angle-double-right"></i> <span>Notification Settings</span></a>
 							</li>
 							<li class=""><a href="/user/apiKey/?action=manage"><i
@@ -457,8 +457,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<strong>Copyrights &copy; VIRTUOSO NETSOFT 2023 </strong> All rights reserved.
-					| <a href="=/terms/">Terms and Conditions</a> | <a
-						href="/privacy/">Privacy Policy</a>
+					| <a href="=/terms/">Terms and Conditions</a> | <a href="/privacy/">Privacy Policy</a>
 				</div>
 				<div class="col-md-4">
 					<span class="version"><strong>Version</strong> 4.9</span>
