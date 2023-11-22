@@ -90,11 +90,11 @@
 								</li>
 								<li class="user-footer" style="background-color: #B8BABA;">
 									<div class="pull-left">
-										<a href="https://api.vnsai.com/user/profile/"
+										<a href="/user/profile/"
 											class="btn btn-success btn-flat"><i class="fa fa-user"></i> Profile</a>
 									</div>
 									<div class="pull-right">
-										<a href="https://api.vnsai.com/logout/" class="btn btn-danger btn-flat"><i
+										<a href="/logout/" class="btn btn-danger btn-flat"><i
 												class="fa fa-sign-out"></i> Sign out</a>
 									</div>
 								</li>
@@ -113,7 +113,7 @@
 					</div>
 					<div class="pull-left info">
 						<p>demo1</p>
-						<a href="https://api.vnsai.com/user/profile/"><i class="fa fa-circle text-success"></i>
+						<a href="/user/profile/"><i class="fa fa-circle text-success"></i>
 							Online</a>
 					</div>
 				</div>
@@ -131,16 +131,16 @@
 										class="fa fa-angle-double-right"></i> <span>Edit Profile</span></a></li>
 							<li class=""><a href="{% url 'rate_plan' %}"><i
 										class="fa fa-angle-double-right"></i> <span>Rate Plan</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/notifications/"><i
+							<li class=""><a href="/user/notifications/"><i
 										class="fa fa-angle-double-right"></i> <span>Notification Settings</span></a>
 							</li>
-							<li class=""><a href="https://api.vnsai.com/user/apiKey/?action=manage"><i
+							<li class=""><a href="/user/apiKey/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>API Key</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/creditHistory/?action=manage"><i
+							<li class=""><a href="/user/creditHistory/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>Credit History</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/docs_manager/?action=manage"><i
+							<li class=""><a href="/user/docs_manager/?action=manage"><i
 										class="fa fa-file"></i> <span>Docs Manager</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/logout/"><i
+							<li class=""><a href="/user/logout/"><i
 										class="fa fa-angle-double-right"></i> <span>Sign out</span></a></li>
 						</ul>
 					</li>
@@ -151,17 +151,17 @@
 										SMS</span><span class="pull-right-container"><i
 											class="fa fa-angle-left pull-right"></i></span></a>
 								<ul class="treeview-menu">
-									<li class=""><a href="https://api.vnsai.com/user/sendSMS/?action=quick"><i
+									<li class=""><a href="/user/sendSMS/?action=quick"><i
 												class="fa fa-angle-double-right"></i> <span>Quick SMS</span></a></li>
-									<li class=""><a href="https://api.vnsai.com/user/sendSMS/?action=group"><i
+									<li class=""><a href="/user/sendSMS/?action=group"><i
 												class="fa fa-angle-double-right"></i> <span>Group SMS</span></a></li>
-									<li class=""><a href="https://api.vnsai.com/user/sendSMS/?action=fileMobile"><i
+									<li class=""><a href="/user/sendSMS/?action=fileMobile"><i
 												class="fa fa-angle-double-right"></i> <span>File Upload only
 												Mobile</span></a></li>
-									<li class=""><a href="https://api.vnsai.com/user/sendSMS/?action=fileMessage"><i
+									<li class=""><a href="/user/sendSMS/?action=fileMessage"><i
 												class="fa fa-angle-double-right"></i> <span>File Upload with
 												Message</span></a></li>
-									<li class=""><a href="https://api.vnsai.com/user/sendSMS/?action=fileCustom"><i
+									<li class=""><a href="/user/sendSMS/?action=fileCustom"><i
 												class="fa fa-angle-double-right"></i> <span>File Upload
 												Custom</span></a></li>
 								</ul>
@@ -170,32 +170,32 @@
 										Schedule</span><span class="pull-right-container"><i
 											class="fa fa-angle-left pull-right"></i></span></a>
 								<ul class="treeview-menu">
-									<li class=""><a href="https://api.vnsai.com/user/schedule/?action=manage"><i
+									<li class=""><a href="/user/schedule/?action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>Scheduled SMS</span></a>
 									</li>
-									<li class=""><a href="https://api.vnsai.com/user/campaign/?action=manage"><i
+									<li class=""><a href="/user/campaign/?action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>Manage Campaign</span></a>
 									</li>
 								</ul>
 							</li>
-							<li class=""><a href="https://api.vnsai.com/user/senderId/?action=manage"><i
+							<li class=""><a href="/user/senderId/?action=manage"><i
 										class="fa fa-file-text"></i> <span>Sender ID</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/template/?action=manage"><i
+							<li class=""><a href="/user/template/?action=manage"><i
 										class="fa fa-file-text"></i> <span>Message Templates</span></a></li>
 							<li class="treeview"><a href="#"><i class="fa fa-files-o"></i> <span>SMS Reports</span><span
 										class="pull-right-container"><i
 											class="fa fa-angle-left pull-right"></i></span></a>
 								<ul class="treeview-menu">
 									<li class=""><a
-											href="https://api.vnsai.com/user/deliverySMSSummary/?action=manage"><i
+											href="/user/deliverySMSSummary/?action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>Delivery Summary</span></a>
 									</li>
 									<li class=""><a
-											href="https://api.vnsai.com/user/deliverySMSReport/?action=manage"><i
+											href="/user/deliverySMSReport/?action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>Delivery Report</span></a>
 									</li>
 									<li class=""><a
-											href="https://api.vnsai.com/user/fileSMSUploadManage/?action=manage"><i
+											href="/user/fileSMSUploadManage/?action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>Uploaded Files</span></a>
 									</li>
 								</ul>
@@ -205,76 +205,76 @@
 											class="fa fa-angle-left pull-right"></i></span></a>
 								<ul class="treeview-menu">
 									<li class=""><a
-											href="https://api.vnsai.com/user/feature/?featureName=gvsms&fpage=logs&action=manage"><i
+											href="/user/feature/?featureName=gvsms&fpage=logs&action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>User VSMS Logs</span></a>
 									</li>
 									<li class=""><a
-											href="https://api.vnsai.com/user/feature/?featureName=gvsms&fpage=summary&action=manage"><i
+											href="/user/feature/?featureName=gvsms&fpage=summary&action=manage"><i
 												class="fa fa-angle-double-right"></i> <span>User VSMS Summary</span></a>
 									</li>
 								</ul>
 							</li>
-							<li class=""><a href="https://api.vnsai.com/user/drafts/?action=manage"><i
+							<li class=""><a href="/user/drafts/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>Message Drafts</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/smppDetails/"><i
+							<li class=""><a href="/user/smppDetails/"><i
 										class="fa fa-angle-double-right"></i> <span>SMPP Details</span></a></li>
 							<li class="treeview"><a href="#"><i class="fa fa-plug"></i> <span>SMS API</span><span
 										class="pull-right-container"><i
 											class="fa fa-angle-left pull-right"></i></span></a>
 								<ul class="treeview-menu">
-									<li class=""><a href="https://api.vnsai.com/user/buildSMSApi/"><i
+									<li class=""><a href="/user/buildSMSApi/"><i
 												class="fa fa-angle-double-right"></i> <span>Build API (GET)</span></a>
 									</li>
-									<li class=""><a href="https://api.vnsai.com/user/buildSMSApi/?action=sampleCode"><i
+									<li class=""><a href="/user/buildSMSApi/?action=sampleCode"><i
 												class="fa fa-angle-double-right"></i> <span>SMS Sample Code</span></a>
 									</li>
 									<li class=""><a
-											href="https://api.vnsai.com/user/general/?action=postmanCollection"><i
+											href="/user/general/?action=postmanCollection"><i
 												class="fa fa-angle-double-right"></i> <span>Postman
 												Collection</span></a></li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<li class=""><a href="https://api.vnsai.com/user/smartLink/?action=manage"><i
+					<li class=""><a href="/user/smartLink/?action=manage"><i
 								class="fa fas fa-link"></i> <span>Smart Link Manager</span></a></li>
 					<li class="treeview"><a href="#"><i class="fa fa-address-book"></i> <span>Manage Groups</span><span
 								class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
 						<ul class="treeview-menu">
-							<li class=""><a href="https://api.vnsai.com/user/group/?action=manage"><i
+							<li class=""><a href="/user/group/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>Groups</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/contact/?action=manage"><i
+							<li class=""><a href="/user/contact/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>Contacts</span></a></li>
 						</ul>
 					</li>
 					<li class="treeview"><a href="#"><i class="fa fa-info-circle"></i> <span>Info Centre</span><span
 								class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
 						<ul class="treeview-menu">
-							<li class=""><a href="https://api.vnsai.com/user/info/?action=loadAll"><i
+							<li class=""><a href="/user/info/?action=loadAll"><i
 										class="fa fa-angle-double-right"></i> <span>Load All</span></a></li>
 						</ul>
 					</li>
 					<li class="treeview"><a href="#"><i class="fa fa-magic"></i> <span>Extra</span><span
 								class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
 						<ul class="treeview-menu">
-							<li class=""><a href="https://api.vnsai.com/user/check_dnd/"><i
+							<li class=""><a href="/user/check_dnd/"><i
 										class="fa fa-angle-double-right"></i> <span>Check DND</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/generate_mobile/"><i
+							<li class=""><a href="/user/generate_mobile/"><i
 										class="fa fa-angle-double-right"></i> <span>Generate Mobile Nos.</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/remove_duplicate/"><i
+							<li class=""><a href="/user/remove_duplicate/"><i
 										class="fa fa-angle-double-right"></i> <span>Remove Duplicates</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/smsLengthCalculator/"><i
+							<li class=""><a href="/user/smsLengthCalculator/"><i
 										class="fa fa-angle-double-right"></i> <span>SMS Length Calculator</span></a>
 							</li>
-							<li class=""><a href="https://api.vnsai.com/user/downloads/?action=manage"><i
+							<li class=""><a href="/user/downloads/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>Downloads</span></a></li>
-							<li class=""><a href="https://api.vnsai.com/user/helper/?action=manage"><i
+							<li class=""><a href="/user/helper/?action=manage"><i
 										class="fa fa-angle-double-right"></i> <span>Enocder/Decoder</span></a></li>
 						</ul>
 					</li>
-					<li class=""><a href="https://api.vnsai.com/user/support/"><i class="fa fa-life-bouy"></i>
+					<li class=""><a href="/user/support/"><i class="fa fa-life-bouy"></i>
 							<span>Support</span></a></li>
-					<li class=""><a href="https://api.vnsai.com/user/webhook/?action=manage"><i class="fa fa-link"></i>
+					<li class=""><a href="/user/webhook/?action=manage"><i class="fa fa-link"></i>
 							<span>Webhook</span></a></li>
 
 				</ul>
@@ -288,7 +288,7 @@
 					Dashboard
 				</h1>
 				<ol class="breadcrumb">
-					<li class="breadcrumb-item"><a href="https://api.vnsai.com/user/dashboard/">Dashboard</a></li>
+					<li class="breadcrumb-item"><a href="/user/dashboard/">Dashboard</a></li>
 				</ol>
 			</section>
 
