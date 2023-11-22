@@ -10,4 +10,5 @@ urlpatterns = [
     path('edit_profile/', views.edit_profile, name='edit_profile'),
     path('rate_plan/', views.rate_plan, name='rate_plan'),
     path('ip_whitelist/', views.ip_whitelist, name='ip_whitelist'),
+    path('notification_settings/', views.notification_settings, name='notification_settings'),
 ]

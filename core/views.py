@@ -23,3 +23,6 @@ def rate_plan(request):
 
 def ip_whitelist(request):
     return render(request, 'ip_whitelist.html')
+
+def notification_settings (request):
+    return render(request, 'notification_settings.html')
