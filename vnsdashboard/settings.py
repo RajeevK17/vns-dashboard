@@ -12,9 +12,18 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import platform
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+if(platform.system() == 'Linux'):
+    static_url_path = os.getcwd() + '/core/static'
+
+elif(platform.system() == 'Windows'):
+    static_url_path = os.getcwd() + '\core\static'
+
+STATIC_URL = static_url_path
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/

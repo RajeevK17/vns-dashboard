@@ -9,11 +9,14 @@ def dashboard(request):
 def security(request):
     return render(request, 'security.html')
 
-def logintrails(request):
-    return render(request, 'logintrails.html')
+def login_trails(request):
+    return render(request, 'login_trails.html')
 
 def activity(request):
     return render(request, 'activity.html')
 
-def rateplan(request):
-    return render(request, 'RatePlan.html')
+def rate_plan(request):
+    return render(request, 'rate_plan.html')
+
+def edit_profile(request):
+    return render(request, 'edit_profile.html')
