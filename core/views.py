@@ -14,8 +14,6 @@ def login_trails(request):
 
 def activity(request):
     return render(request, 'activity.html')
-<<<<<<< HEAD
-=======
 
 def editprofile(request):
     return render(request, 'edit_profile.html')
