@@ -3,12 +3,10 @@
 
 <section class="content-header">
     <h1>
-        User Notifications <small><a class="btn btn-xs btn-info" style="margin-left:20px;"
-                href="https://api.vnsai.com/user/smsDoc/?action=notifications" target="_blank"
-                title="Help Documentation">Help Doc</a></small>
+        User Notifications 
     </h1>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="https://api.vnsai.com/user/notifications/"><i class="fa fa-cog"></i>
+        <li class="breadcrumb-item active"><a href="{% url 'notification_settings' %}"><i class="fa fa-cog"></i>
                 Notifications</a></li>
     </ol>
 </section>
@@ -19,7 +17,7 @@
                 <div class="box-header card-header with-border bg-black">
                     <h3 class="box-title card-title">Notification Settings</h3>
                 </div>
-                <form action="https://api.vnsai.com/user/notifications/" method="post" id="sgcFormId" name="sgcFormId">
+                <form action="{% url 'notification_settings' %}" method="post" id="sgcFormId" name="sgcFormId">
                     <div class="box-body card-body">
 
                         <input type="hidden" name="csrfToken" id="csrfToken"

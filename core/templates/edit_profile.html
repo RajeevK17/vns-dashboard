@@ -162,12 +162,10 @@
 </style>
 <section class="content-header">
     <h1>
-        Profile <small><a class="btn btn-xs btn-info" style="margin-left:20px;"
-                href="https://api.vnsai.com/user/smsDoc/?action=profile" target="_blank" title="Help Documentation">Help
-                Doc</a></small>
+        Profile 
     </h1>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="https://api.vnsai.com/user/profile/"><i class="fa fa-user"></i>
+        <li class="breadcrumb-item"><a href="{% url 'edit_profile' %}"><i class="fa fa-user"></i>
                 Profile</a></li>
     </ol>
 </section>
@@ -198,7 +196,7 @@
                     </div>
                     <div class="box-body card-body">
 
-                        <form action="https://api.vnsai.com/user/profile/" method="post" id="sgcFormId" name="sgcFormId"
+                        <form action="{% url 'edit_profile' %}" method="post" id="sgcFormId" name="sgcFormId"
                             enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-4 col-md-push-8">
@@ -218,7 +216,7 @@
                                                     <b>Billing Type</b> <a class="pull-right">Submission</a>
                                                 </li>
                                             </ul>
-                                            <a href="https://api.vnsai.com/user/ratePlanDetails/#smsAttributes"
+                                            <a href="{% url 'edit_profile' %}"
                                                 class="btn btn-primary btn-block"><b>Check Rate Plan</b></a>
                                         </div>
                                     </div>
@@ -1021,9 +1019,8 @@
                                             50KB Size allowed. Min Dimension required 215px/215px.</p>
                                     </div>
                                     <div class="form-group">
-                                        <label for="profilePreview">Preview</label>
-                                        <img id="profilePreview" width="50" height="50" border="0"
-                                            src="https://api.vnsai.com/assets/userCustom/assets/images/avatar.png"
+                                    <label for="profilePreview">Preview</label>
+                                    <img id="profilePreview" width="50" height="50" border="0" src="{% static 'img/avatar.png' %}" 
                                             class="img-circle" alt="demo1 Profile Picture"
                                             title="demo1 Profile Picture">
                                     </div>
