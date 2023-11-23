@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% block content %} 
+{% block content %}
 
 <section class="content-header">
     <h1>
-        User Notifications <small><a class="btn btn-xs btn-info" style="margin-left:20px;" href="https://api.vnsai.com/user/smsDoc/?action=notifications" target="_blank" title="Help Documentation">Help Doc</a></small>
+        User Notifications <small><a class="btn btn-xs btn-info" style="margin-left:20px;"
+                href="https://api.vnsai.com/user/smsDoc/?action=notifications" target="_blank"
+                title="Help Documentation">Help Doc</a></small>
     </h1>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item active"><a href="https://api.vnsai.com/user/notifications/"><i class="fa fa-cog"></i> Notifications</a></li>
+        <li class="breadcrumb-item active"><a href="https://api.vnsai.com/user/notifications/"><i class="fa fa-cog"></i>
+                Notifications</a></li>
     </ol>
 </section>
 <section class="content">
@@ -18,46 +21,54 @@
                 </div>
                 <form action="https://api.vnsai.com/user/notifications/" method="post" id="sgcFormId" name="sgcFormId">
                     <div class="box-body card-body">
-                        
-                        <input type="hidden" name="csrfToken" id="csrfToken" value="a96ef9e7b83118c06514c15f1d980508d078c4644bf332e08392cf891ea48c5f">
+
+                        <input type="hidden" name="csrfToken" id="csrfToken"
+                            value="a96ef9e7b83118c06514c15f1d980508d078c4644bf332e08392cf891ea48c5f">
                         <div class="table-responsive">
                             <table class="table fields-table table-vcenter text-nowrap">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Balance Notification</h4>
-                                            <p class="text-info">We will notify you when account reaches set below balance. Notification will be sent once a day.</p>
+                                            <p class="text-info">We will notify you when account reaches set below
+                                                balance. Notification will be sent once a day.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input tabindex="1" data-toggle-notialerts id="enableBalanceAlert" name="enableBalanceAlert" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input tabindex="1" data-toggle-notialerts id="enableBalanceAlert"
+                                                name="enableBalanceAlert" type="checkbox" data-toggle="toggle"
+                                                data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
                                 <tbody class="displaynone">
                                     <tr>
                                         <td colspan="2">
-                                                                                            <div class="form-group">
+                                            <div class="form-group">
                                                 <label class="form-label" for="smsAmount">Wallet Amount</label>
-                                                <input tabindex="2" type="number" step="0.0001" placeholder="100.0000" class="form-control" name="smsAmount" id="smsAmount" value="0.0000">
+                                                <input tabindex="2" type="number" step="0.0001" placeholder="100.0000"
+                                                    class="form-control" name="smsAmount" id="smsAmount" value="0.0000">
                                             </div>
-                                                                                            <div class="form-group">
+                                            <div class="form-group">
                                                 <label class="form-label" for="smsBalanceEmails">E-Mail Address</label>
-                                                <textarea tabindex="3" class="form-control" id="smsBalanceEmails" name="smsBalanceEmails"></textarea>
+                                                <textarea tabindex="3" class="form-control" id="smsBalanceEmails"
+                                                    name="smsBalanceEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Login Alerts</h4>
-                                            <p class="text-info">Whenever anyone logins from your account, we will notify you. Notification will be sent for every successful login.</p>
+                                            <p class="text-info">Whenever anyone logins from your account, we will
+                                                notify you. Notification will be sent for every successful login.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableLoginAlert" name="enableLoginAlert" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableLoginAlert" name="enableLoginAlert"
+                                                type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -66,22 +77,26 @@
                                         <td colspan="2">
                                             <div class="form-group">
                                                 <label class="form-label" for="loginAlertEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="loginAlertEmails" name="loginAlertEmails"></textarea>
+                                                <textarea class="form-control" id="loginAlertEmails"
+                                                    name="loginAlertEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Enable Weekly Credit Transactions</h4>
-                                            <p class="text-info">An E-Mail will be sent out weekly once with your previous week's Credit Transaction Logs.</p>
+                                            <p class="text-info">An E-Mail will be sent out weekly once with your
+                                                previous week's Credit Transaction Logs.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableWeeklyCreditTransaction" name="enableWeeklyCreditTransaction" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableWeeklyCreditTransaction"
+                                                name="enableWeeklyCreditTransaction" type="checkbox"
+                                                data-toggle="toggle" data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -89,23 +104,28 @@
                                     <tr>
                                         <td colspan="2">
                                             <div class="form-group">
-                                                <label class="form-label" for="weeklyCreditTransactionEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="weeklyCreditTransactionEmails" name="weeklyCreditTransactionEmails"></textarea>
+                                                <label class="form-label" for="weeklyCreditTransactionEmails">E-Mail
+                                                    Address</label>
+                                                <textarea class="form-control" id="weeklyCreditTransactionEmails"
+                                                    name="weeklyCreditTransactionEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Enable Monthly Credit Transactions</h4>
-                                            <p class="text-info">An E-Mail will be sent out monthly once with your previous month's Credit Transaction Logs.</p>
+                                            <p class="text-info">An E-Mail will be sent out monthly once with your
+                                                previous month's Credit Transaction Logs.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableMonthlyCreditTransaction" name="enableMonthlyCreditTransaction" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableMonthlyCreditTransaction"
+                                                name="enableMonthlyCreditTransaction" type="checkbox"
+                                                data-toggle="toggle" data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -113,23 +133,28 @@
                                     <tr>
                                         <td colspan="2">
                                             <div class="form-group">
-                                                <label class="form-label" for="monthlyCreditTransactionEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="monthlyCreditTransactionEmails" name="monthlyCreditTransactionEmails"></textarea>
+                                                <label class="form-label" for="monthlyCreditTransactionEmails">E-Mail
+                                                    Address</label>
+                                                <textarea class="form-control" id="monthlyCreditTransactionEmails"
+                                                    name="monthlyCreditTransactionEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Enable Daily SMS Usage Summary</h4>
-                                            <p class="text-info">An E-Mail will be sent out daily with your previous day's Usage Summary Logs.</p>
+                                            <p class="text-info">An E-Mail will be sent out daily with your previous
+                                                day's Usage Summary Logs.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableDailyUsageSummary" name="enableDailyUsageSummary" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableDailyUsageSummary"
+                                                name="enableDailyUsageSummary" type="checkbox" data-toggle="toggle"
+                                                data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -137,23 +162,28 @@
                                     <tr>
                                         <td colspan="2">
                                             <div class="form-group">
-                                                <label class="form-label" for="dailyUsageSummaryEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="dailyUsageSummaryEmails" name="dailyUsageSummaryEmails"></textarea>
+                                                <label class="form-label" for="dailyUsageSummaryEmails">E-Mail
+                                                    Address</label>
+                                                <textarea class="form-control" id="dailyUsageSummaryEmails"
+                                                    name="dailyUsageSummaryEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Enable Weekly SMS Usage Summary</h4>
-                                            <p class="text-info">An E-Mail will be sent out weekly once with your previous week's Usage Summary Logs.</p>
+                                            <p class="text-info">An E-Mail will be sent out weekly once with your
+                                                previous week's Usage Summary Logs.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableWeeklyUsageSummary" name="enableWeeklyUsageSummary" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableWeeklyUsageSummary"
+                                                name="enableWeeklyUsageSummary" type="checkbox" data-toggle="toggle"
+                                                data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -161,23 +191,28 @@
                                     <tr>
                                         <td colspan="2">
                                             <div class="form-group">
-                                                <label class="form-label" for="weeklyUsageSummaryEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="weeklyUsageSummaryEmails" name="weeklyUsageSummaryEmails"></textarea>
+                                                <label class="form-label" for="weeklyUsageSummaryEmails">E-Mail
+                                                    Address</label>
+                                                <textarea class="form-control" id="weeklyUsageSummaryEmails"
+                                                    name="weeklyUsageSummaryEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Enable Monthly SMS Usage Summary</h4>
-                                            <p class="text-info">An E-Mail will be sent out monthly once with your previous month's Usage Summary Logs.</p>
+                                            <p class="text-info">An E-Mail will be sent out monthly once with your
+                                                previous month's Usage Summary Logs.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableMonthlyUsageSummary" name="enableMonthlyUsageSummary" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableMonthlyUsageSummary"
+                                                name="enableMonthlyUsageSummary" type="checkbox" data-toggle="toggle"
+                                                data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -185,23 +220,28 @@
                                     <tr>
                                         <td colspan="2">
                                             <div class="form-group">
-                                                <label class="form-label" for="monthlyUsageSummaryEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="monthlyUsageSummaryEmails" name="monthlyUsageSummaryEmails"></textarea>
+                                                <label class="form-label" for="monthlyUsageSummaryEmails">E-Mail
+                                                    Address</label>
+                                                <textarea class="form-control" id="monthlyUsageSummaryEmails"
+                                                    name="monthlyUsageSummaryEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                                                                                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
+                            <table class="table fields-table table-vcenter text-nowrap table-condensed">
                                 <thead>
                                     <tr>
                                         <td>
                                             <h4 class="text-blue">Enable Monthly Daywise SMS Usage Summary</h4>
-                                            <p class="text-info">An E-Mail will be sent out monthly once with your previous month's Daywise Usage Summary Logs.</p>
+                                            <p class="text-info">An E-Mail will be sent out monthly once with your
+                                                previous month's Daywise Usage Summary Logs.</p>
                                         </td>
                                         <td width="10" class="align-right">
-                                            <input data-toggle-notialerts id="enableMonthlyDaywiseUsageSummary" name="enableMonthlyDaywiseUsageSummary" type="checkbox" data-toggle="toggle" data-onstyle="primary" value="1">
+                                            <input data-toggle-notialerts id="enableMonthlyDaywiseUsageSummary"
+                                                name="enableMonthlyDaywiseUsageSummary" type="checkbox"
+                                                data-toggle="toggle" data-onstyle="primary" value="1">
                                         </td>
                                     </tr>
                                 </thead>
@@ -209,22 +249,28 @@
                                     <tr>
                                         <td colspan="2">
                                             <div class="form-group">
-                                                <label class="form-label" for="monthlyDaywiseUsageSummaryEmails">E-Mail Address</label>
-                                                <textarea class="form-control" id="monthlyDaywiseUsageSummaryEmails" name="monthlyDaywiseUsageSummaryEmails"></textarea>
+                                                <label class="form-label" for="monthlyDaywiseUsageSummaryEmails">E-Mail
+                                                    Address</label>
+                                                <textarea class="form-control" id="monthlyDaywiseUsageSummaryEmails"
+                                                    name="monthlyDaywiseUsageSummaryEmails"></textarea>
                                             </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                             <hr>
-                                                            <div class="alert alert-info alert-dismissible">
-                                <i class="icon fa fa-info"></i> Your registered E-Mail address (a3curity.al3rt.smpp@gmail.com) is automatically included when any option is enabled. Add only additional E-Mail addresses for notifications separated by comma without space.
+                            <div class="alert alert-info alert-dismissible">
+                                <i class="icon fa fa-info"></i> Your registered E-Mail address
+                                (a3curity.al3rt.smpp@gmail.com) is automatically included when any option is enabled.
+                                Add only additional E-Mail addresses for notifications separated by comma without space.
                             </div>
                         </div>
                     </div>
                     <div class="box-footer card-footer text-right">
-                        <button tabindex="4" type="submit" id="sgc-btn-progress" class="btn btn-primary"><i class="fa fa-save"></i> Save Changes</button>
-                        <span id="sgc-progress-indicator" class="sgcprogressindicator btn btn-primary btn-flat"><i class="fa fa-cog fa-spin"></i> Please wait, Saving...</span>
+                        <button tabindex="4" type="submit" id="sgc-btn-progress" class="btn btn-primary"><i
+                                class="fa fa-save"></i> Save Changes</button>
+                        <span id="sgc-progress-indicator" class="sgcprogressindicator btn btn-primary btn-flat"><i
+                                class="fa fa-cog fa-spin"></i> Please wait, Saving...</span>
                         <input type="hidden" id="notificationForm" name="notificationForm" value="1">
                     </div>
                 </form>

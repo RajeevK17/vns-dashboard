@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% block content %} 
+{% block content %}
 <section class="content-header">
     <h1>
         Security
     </h1>
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href= "{% url 'security'%}">Security</a></li>
+        <li class="breadcrumb-item"><a href="{% url 'security'%}">Security</a></li>
     </ol>
 </section>
 <section class="content">
@@ -18,23 +18,36 @@
                 <div class="box-body card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            
+
                         </div>
                     </div>
                     <div class="tabbable">
                         <ul class="nav nav-tabs" id="smsTab">
-                            <li class=" active"><a id="chPassTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0 active" href="{% url 'security'%}"><i class="fa fa-lock"></i> Change Password</a></li>
-                            <li class=""><a id="loginTrailTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'login_trails'%}"><i class="fa fa-road"></i> Login Trails</a></li>
-                            <li class=""><a id="activityTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'activity' %}"><i class="fa fa-recycle"></i> Activity</a></li>
-                            <li class=""><a id="ipWhitelistTab" data-bs-toggle="tab" aria-expanded="false" class="nav-link border border-primary border-bottom-0" href="{% url 'ip_whitelist' %}"><i class="fa fa-user-secret"></i> IP Whitelist</a></li>
+                            <li class=" active"><a id="chPassTab" data-bs-toggle="tab" aria-expanded="false"
+                                    class="nav-link border border-primary border-bottom-0 active"
+                                    href="{% url 'security'%}"><i class="fa fa-lock"></i> Change Password</a></li>
+                            <li class=""><a id="loginTrailTab" data-bs-toggle="tab" aria-expanded="false"
+                                    class="nav-link border border-primary border-bottom-0"
+                                    href="{% url 'login_trails'%}"><i class="fa fa-road"></i> Login Trails</a></li>
+                            <li class=""><a id="activityTab" data-bs-toggle="tab" aria-expanded="false"
+                                    class="nav-link border border-primary border-bottom-0"
+                                    href="{% url 'activity' %}"><i class="fa fa-recycle"></i> Activity</a></li>
+                            <li class=""><a id="ipWhitelistTab" data-bs-toggle="tab" aria-expanded="false"
+                                    class="nav-link border border-primary border-bottom-0"
+                                    href="{% url 'ip_whitelist' %}"><i class="fa fa-user-secret"></i> IP Whitelist</a>
+                            </li>
                         </ul>
                         <div class="tab-content padding-in">
-                                                            <form action="{% url 'security' %}" method="post" id="sgcFormId" name="sgcFormId" novalidate="novalidate">
+                            <form action="{% url 'security' %}" method="post" id="sgcFormId" name="sgcFormId"
+                                novalidate="novalidate">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label for="cpass">Enter Current Password</label>
-                                            <input tabindex="1" type="password" class="form-control" id="cpass" name="cpass" placeholder="Enter current password" data-rule-required="true" data-msg-required="Enter your current password" required="">
+                                            <input tabindex="1" type="password" class="form-control" id="cpass"
+                                                name="cpass" placeholder="Enter current password"
+                                                data-rule-required="true"
+                                                data-msg-required="Enter your current password" required="">
                                         </div>
                                         <div class="row">
                                             <div class="col-md-12">
@@ -43,7 +56,19 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="newPassword" class="text-bold sgc_required">New Password</label>
-                                            <div class="passtrengthMeter"><input type="password" tabindex="2" placeholder="Enter password" maxlength="20" id="newPassword" name="newPassword" class="form-control" data-msg-required="Please enter your password" value="" data-rule-required="true" data-rule-pwchecklowercase="true" data-rule-pwcheckuppercase="true" data-rule-pwchecknumber="true" data-rule-pwcheckconsecchars="true" data-rule-minlength="8" data-rule-maxlength="20" required=""><div class="tooltip" style="margin-left: -41.0156px;">Min 8 chars</div><span class="showPassword"><img src="https://api.vnsai.com/assets/js/plugins/eye.svg" width = "20" height="10"></span><input type="text" style="display: none;"></div>
+                                            <div class="passtrengthMeter"><input type="password" tabindex="2"
+                                                    placeholder="Enter password" maxlength="20" id="newPassword"
+                                                    name="newPassword" class="form-control"
+                                                    data-msg-required="Please enter your password" value=""
+                                                    data-rule-required="true" data-rule-pwchecklowercase="true"
+                                                    data-rule-pwcheckuppercase="true" data-rule-pwchecknumber="true"
+                                                    data-rule-pwcheckconsecchars="true" data-rule-minlength="8"
+                                                    data-rule-maxlength="20" required="">
+                                                <div class="tooltip" style="margin-left: -41.0156px;">Min 8 chars</div>
+                                                <span class="showPassword"><img
+                                                        src="https://api.vnsai.com/assets/js/plugins/eye.svg" width="20"
+                                                        height="10"></span><input type="text" style="display: none;">
+                                            </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="col-sm-6 col-sm-offset-2">
@@ -51,14 +76,24 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="confirmPassword" class="text-bold sgc_required">Confirm Password</label>
-                                            <input type="password" tabindex="3" placeholder="Confirm password" maxlength="20" id="confirmPassword" name="confirmPassword" class="form-control" data-msg-required="Please confirm your new password." value="" data-rule-required="true" data-rule-equalto="#newPassword" required="">
+                                            <label for="confirmPassword" class="text-bold sgc_required">Confirm
+                                                Password</label>
+                                            <input type="password" tabindex="3" placeholder="Confirm password"
+                                                maxlength="20" id="confirmPassword" name="confirmPassword"
+                                                class="form-control"
+                                                data-msg-required="Please confirm your new password." value=""
+                                                data-rule-required="true" element.style-rule-equalto="#newPassword" required="">
                                         </div>
                                         <div class="box-footer">
-                                            <button tabindex="4" type="submit" id="sgc-btn-progress" class="btn btn-primary" data-original-title="" title=""><i class="fa fa-refresh"></i> Change My Password</button>
-                                            <span id="sgc-progress-indicator" class="sgcprogressindicator btn btn-primary btn-flat"><i class="fa fa-cog fa-spin"></i> Changing Password...</span>
+                                            <button tabindex="4" type="submit" id="sgc-btn-progress"
+                                                class="btn btn-primary" data-original-title="" title=""><i
+                                                    class="fa fa-refresh"></i> Change My Password</button>
+                                            <span id="sgc-progress-indicator"
+                                                class="sgcprogressindicator btn btn-primary btn-flat"><i
+                                                    class="fa fa-cog fa-spin"></i> Changing Password...</span>
                                             <input type="hidden" id="submitform" name="submitform" value="1">
-                                            <input type="hidden" name="csrfToken" id="csrfToken" value="a6be509f3759c9519fe0e51b2762a42048efb719dfaa831325d22db95dc0c15f">
+                                            <input type="hidden" name="csrfToken" id="csrfToken"
+                                                value="a6be509f3759c9519fe0e51b2762a42048efb719dfaa831325d22db95dc0c15f">
                                         </div>
                                     </div>
                                     <div class="col-md-8">
@@ -72,25 +107,22 @@
                                             </div>
                                         </div>
                                         <div class="form-group" style="margin-top: 60px">
-                                            <input type="button" class="btn btn-warning btn-xs" value="Generate Password" onclick="generatePass();" tabindex="5">
+                                            <input type="button" class="btn btn-warning btn-xs"
+                                                value="Generate Password" onclick="generatePass();" tabindex="5">
                                             <span id="genPassId" class="margl40"></span>
                                         </div>
                                         &nbsp;
                                     </div>
                                 </div>
                             </form>
-                            <p class="text-bold text-navy margt40">It is recommended to change password at least once in 2 months. Do not forget to change your password often.</p>
-                                                    </div>
+                            <p class="text-bold text-navy margt40">It is recommended to change password at least once in
+                                2 months. Do not forget to change your password often.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </section>
-
-
-
-
-
 
 {% endblock content %}
